@@ -1,3 +1,4 @@
+
 class Funcionario {
   String _nome;
   int _idade;
@@ -12,12 +13,14 @@ class Funcionario {
     print("Salario: $_salario;");
   }
 
+  double aumento() => _salario *= 1.1;
+
   String get getNome => this._nome;
-  set setNome(String nome) => this._nome = nome;
+  set nome(String nome) => _nome = nome;
 
   int get getIdade => this._idade;
-  set setIdade(int idade) => this._idade = idade;
+  set idade(int idade) => _idade = idade;
 
   double get getSalario => this._salario;
-  set setSalario(double salario) => this._salario = salario;
+  set salario(double salario) => _salario = salario;
 }

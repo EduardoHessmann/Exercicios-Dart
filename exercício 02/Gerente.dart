@@ -15,5 +15,5 @@ class Gerente extends Funcionario {
   }
 
   String get getDepartamento => this._departamento;
-  set setDepartamento(String departamento) => this._departamento = departamento;
+  set departamento(String departamento) => _departamento = departamento;
 }
